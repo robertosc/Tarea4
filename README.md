@@ -36,3 +36,27 @@ Se puede observar que conforme se aumenta el SNR, se disminuye el nivel de ruido
 
 
 ## Parte 4: Densidad espectral de potencia
+
+A partir de las señales moduladas con y sin ruido se calculó la densidad espectral de potencia. Puesto que la señal modulada sin ruido siempre es igual, solo se calculó su resultado una vez, los casos con ruido se tuvieron que calcular para cada SNR.
+
+<img src="../master/images/dens_limpia.png" width="450">
+
+<img src="../master/images/dens_neg_2.png" width="450">
+
+<img src="../master/images/dens_neg_2.png" width="450">
+
+<img src="../master/images/dens_0.png" width="450">
+
+<img src="../master/images/dens_1.png" width="450">
+
+<img src="../master/images/dens_2.png" width="450">
+
+<img src="../master/images/dens_3.png" width="450">
+
+## Parte 5: Demodulación
+
+La demodulación de la señal recibida se realizó por medio del análisis de la energía de la misma. Para ello se calculó la energía en una señal sinusoidal. Posteriormente se iteró sobre la señal recibida de y se comparó la energía de los periodos con la energía calculada. Si la energía calculada era superior a la mitad de la energía del periodo de un seno, se le asignaba un  a la demodulación, caso contrario se asigna un 0.  Estos bits se almacenaron en un array, de modo que si tomamos los datos originales y le restamos los obtenidos, podemos hallar la cantidad de bits que no concuerdan.  
+
+Los resultados fueron buenos puesto que se logró demodular todos los bits con todos los niveles de ruido. Se graficó el BER (Bit error rate) en función del SNR. Se observa lo antes mencionado, el error logrado es de 0%.
+
+<img src="../master/images/BER.png" width="450">
