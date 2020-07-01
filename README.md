@@ -6,7 +6,7 @@ La modulación binaria por desplazamiento de fase, conocida como BPSK por sus si
 
 Para esta tarea se pedía modular una conjunto de datos conformado por 10000 bits por medio de la modulación BPSK. Para ello se leyó el documento utilizando la librería pandas. Para la modulación se definieron los distintos vectores de tiempo, de modo que se abarcase la cantidad total de bits del archivo. Puesto que se usó una frecuencia de 5000 Hz y 100 puntos de muestra por periodo, la frecuencia de Nyquist es de 500kHz, la cual se utiliza como frecuencia de muestreo. Al leer los bits, si se hallaba un 1, se asignaba un seno a un espacio previamente vacío, caso contrario se asignó un seno negativo. Se este modo se btuvo la señal modulada.
 
-<img src="../master/images/modulada.png" width="80">
+<img src="../master/images/modulada.png" width="450">
 
 En la imagen previa se modulan los primero 10 bits.
 
