@@ -14,7 +14,7 @@ En la imagen previa se modulan los primero 10 bits.
 
 Se calculó la potencia promedio de la señal modulada. Esta se calcula por medio de la integral de la señal al cuadrado, dividida entre el tiempo multiplicado por un factor de 2. Para calcular esta integral se utilizó la función integrate.trapz, que calcula integrales por medio de trapezoides. 
 
-<img src="../master/images/pot.png" width="450">
+<img src="../master/images/pot.png" width="150">
 
 Se obtuvo que la potencia promedio es P = 0.499
 
@@ -22,7 +22,7 @@ Se obtuvo que la potencia promedio es P = 0.499
 
 Se simuló la transmisión de la señal por un medio desconocido. Para este caso solo se consideró la existencia de la aparición de ruido blanco en la señal modulada. En esta sección se añadió ruido con potencias promedio de ditintas magnitudes. Se creó un ruido por medio de el SNR, parámetro que dice la relaicón existente entre la señal y el ruido. 
 
-<img src="../master/images/snr.png" width="450">
+<img src="../master/images/snr.png" width="150">
 
 Los SNR utilizados son  -2dB, -1dB, 0dB, 1dB, 2dB y 3dB. El ruido se generó a partir de valores aleatorios con una distribucion normal, estas magnitudes obtenidas se le sumaron a la señal modulada. Se obtuvieron los siguientes resultados.
 
