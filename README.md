@@ -43,7 +43,7 @@ Se puede observar que conforme se aumenta el SNR, se disminuye el nivel de ruido
 
 ## Parte 4: Densidad espectral de potencia
 
-A partir de las señales moduladas con y sin ruido se calculó la densidad espectral de potencia. Puesto que la señal modulada sin ruido siempre es igual, solo se calculó su resultado una vez, los casos con ruido se tuvieron que calcular para cada SNR. Este parametro dice como se distribuye la energía de una onda en términos de la frecuencia, como se puede observar, en todos los casos la densidad es mayor a menor frecuencia.
+A partir de las señales moduladas con y sin ruido se calculó la densidad espectral de potencia. Puesto que la señal modulada sin ruido siempre es igual, solo se calculó su resultado una vez, los casos con ruido se tuvieron que calcular para cada SNR. Este parametro dice como se distribuye la energía de una onda en términos de la frecuencia, como se puede observar, en todos los casos la densidad es mayor a menor frecuencia y el pico más alto ocurre a la frecuencia de la onda.
 
 <img src="../master/images/dens_limpia.png" width="450">
 
