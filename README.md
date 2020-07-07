@@ -12,13 +12,19 @@ En la imagen previa se modulan los primero 10 bits.
 
 ## Parte 2: Cálculo de potencia promedio
 
-Se calculó la potencia pormedio de la señal modulada. Esta se calcula por medio de la integral de la señal al cuadrado, dividida entre el tiempo multiplicado por un factor de 2. Para calcular esta integral se utilizó la función integrate.trapz, que calcula integrales por medio de trapezoides. Se obtuvo que la potencia promedio es P = 0.499
+Se calculó la potencia promedio de la señal modulada. Esta se calcula por medio de la integral de la señal al cuadrado, dividida entre el tiempo multiplicado por un factor de 2. Para calcular esta integral se utilizó la función integrate.trapz, que calcula integrales por medio de trapezoides. 
+
+<img src="../master/images/pot.png" width="450">
+
+Se obtuvo que la potencia promedio es P = 0.499
 
 ## Parte 3: Simulación de un canal ruidoso
 
-# añadir formulas
+Se simuló la transmisión de la señal por un medio desconocido. Para este caso solo se consideró la existencia de la aparición de ruido blanco en la señal modulada. En esta sección se añadió ruido con potencias promedio de ditintas magnitudes. Se creó un ruido por medio de el SNR, parámetro que dice la relaicón existente entre la señal y el ruido. 
 
-Se simuló la transmisión de la señal por un medio desconocido. Para este caso solo se consideró la existencia de la aparición de ruido blanco en la señal modulada. En esta sección se añadió ruido con potencias promedio de ditintas magnitudes. Se calculó un ruido de -2dB, -1dB, 0dB, 1dB, 2dB y 3dB. El ruido se generó a partir de valores aleatorios con una distribucion normal, estas magnitudes obtenidas se le sumaron a la señal modulada. Se obtuvieron los siguientes resultados.
+<img src="../master/images/snr.png" width="450">
+
+Los SNR utilizados son  -2dB, -1dB, 0dB, 1dB, 2dB y 3dB. El ruido se generó a partir de valores aleatorios con una distribucion normal, estas magnitudes obtenidas se le sumaron a la señal modulada. Se obtuvieron los siguientes resultados.
 
 <img src="../master/images/ruido_neg_2.png" width="450">
 
@@ -37,7 +43,7 @@ Se puede observar que conforme se aumenta el SNR, se disminuye el nivel de ruido
 
 ## Parte 4: Densidad espectral de potencia
 
-A partir de las señales moduladas con y sin ruido se calculó la densidad espectral de potencia. Puesto que la señal modulada sin ruido siempre es igual, solo se calculó su resultado una vez, los casos con ruido se tuvieron que calcular para cada SNR.
+A partir de las señales moduladas con y sin ruido se calculó la densidad espectral de potencia. Puesto que la señal modulada sin ruido siempre es igual, solo se calculó su resultado una vez, los casos con ruido se tuvieron que calcular para cada SNR. Este parametro dice como se distribuye la energía de una onda en términos de la frecuencia, como se puede observar, en todos los casos la densidad es mayor a menor frecuencia.
 
 <img src="../master/images/dens_limpia.png" width="450">
 
