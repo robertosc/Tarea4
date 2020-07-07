@@ -61,7 +61,7 @@ A partir de las señales moduladas con y sin ruido se calculó la densidad espec
 
 ## Parte 5: Demodulación
 
-La demodulación de la señal recibida se realizó por medio del análisis de la energía de la misma. Para ello se calculó la energía en una señal sinusoidal. Posteriormente se iteró sobre la señal recibida de y se comparó la energía de los periodos con la energía calculada. Si la energía calculada era superior a la mitad de la energía del periodo de un seno, se le asignaba un  a la demodulación, caso contrario se asigna un 0.  Estos bits se almacenaron en un array, de modo que si tomamos los datos originales y le restamos los obtenidos, podemos hallar la cantidad de bits que no concuerdan.  
+La demodulación de la señal recibida se realizó por medio del análisis de la energía de la misma. Para ello se calculó la energía en una señal sinusoidal. Posteriormente se iteró sobre la señal recibida y se comparó la energía de los periodos con la energía calculada. Si la energía calculada era superior a la mitad de la energía del periodo de un seno, se le asigna un 1 a la demodulación, caso contrario se asigna un 0.  Estos bits se almacenaron en un array, de modo que si tomamos los datos originales y le restamos los obtenidos, podemos hallar la cantidad de bits que no concuerdan.  
 
 Los resultados fueron buenos puesto que se logró demodular todos los bits con todos los niveles de ruido. Se graficó el BER (Bit error rate) en función del SNR. Se observa lo antes mencionado, el error logrado es de 0%.
 
